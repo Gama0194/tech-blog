@@ -1,0 +1,16 @@
+{{> navbar}}
+
+{{#if user}}
+    <h1>Welcome, {{user.username}}!</h1>
+{{else}}
+    <h1>Welcome to the Tech Blog!</h1>
+{{/if}}
+
+{{#each posts}}
+    <div>
+        <h2>{{title}}</h2>
+        <p>{{body}}</p>
+        <p>Created by: {{user.username}}</p>
+        <p>Date: {{createdAt}}</p>
+    </div>
+{{/each}}
