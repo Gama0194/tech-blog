@@ -1,8 +1,9 @@
 {
-    "name": "Tech-Blog",
+    "name": "tech-blog",
     "version": "1.0.0",
     "description": "blog",
     "main": "server.js",
+    "type": "module",
     "scripts": {
         "start": "node server.js",
         "seed": "node seeds/index.js",
@@ -20,5 +21,8 @@
         "express-session": "^1.17.3",
         "mysql2": "^2.3.3",
         "sequelize": "^6.33.0"
+    },
+    "devDependencies": {
+        "@types/express-handlebars": "^6.0.0"
     }
 }

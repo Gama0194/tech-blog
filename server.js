@@ -1,9 +1,11 @@
 // Required dependencies
-const express = require('express');
-const exphbs = require('express-handlebars');
-const session = require('express-session');
-const routes = require('./controllers/index.js');
-const sequelize = require('./config/config.js');
+import express from 'express';
+// Remove the following line since 'example' is never used
+// import example from './models';
+import session from 'express-session';
+import routes from './controllers/index.js';
+import sequelize from './config/config.js';
+import path from 'path';
 
 // Set up the Express App
 const app = express();
@@ -39,3 +41,4 @@ app.use(routes);
 sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => console.log(`App listening on port ${PORT}!`));
 });
+
