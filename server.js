@@ -1,6 +1,7 @@
 // Required dependencies
 import express from 'express';
-import exphbs from 'express-handlebars';
+// This is not valid JavaScript code. Please run this command in your terminal or command prompt:
+// npm i --save-dev @types/express-handlebars
 import session from 'express-session';
 import routes from './controllers/index';
 import sequelize from './config/config';
