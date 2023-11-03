@@ -1,10 +1,9 @@
 // Required dependencies
 import express from 'express';
-// Remove the following line since 'example' is never used
-// import example from './models';
+import exphbs from 'express-handlebars';
 import session from 'express-session';
-import routes from './controllers/index.js';
-import sequelize from './config/config.js';
+import routes from './controllers/index';
+import sequelize from './config/config';
 import path from 'path';
 
 // Set up the Express App

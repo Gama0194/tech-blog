@@ -1,5 +1,5 @@
 import { Model, DataTypes } from 'sequelize';
-const sequelize = require('../config/config.js');
+const sequelize = require('../config/config');
 
 class User extends Model {}
 
